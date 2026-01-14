@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Kyle N. Rossi</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/brands.min.css" rel="stylesheet">
+        <link href="css/solid.min.css" rel="stylesheet">
+        <link href="css/v4-font-face.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">Kyle N. Rossi</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#kyle-n-rossi" class="nav-link">Kyle N. Rossi</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#about-me" class="nav-link">About Me</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#srcml" class="nav-link">srcML</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#education" class="nav-link">Education</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#publications" class="nav-link">Publications</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#professional-activities" class="nav-link">Professional Activities</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><img src="images/portrait.jpeg" alt="Portrait" align="right" width="164" height="218"></p>
+<h1 id="kyle-n-rossi">Kyle N. Rossi</h1>
+<h5 id="research-assistant-at-kent-state-university">Research Assistant at Kent State University</h5>
+<h5 id="hehim">(he/him)</h5>
+<p><a href="mailto:krossi9@kent.edu"><img alt="Email" src="images/email-icon.svg" /></a> <a href="https://github.com/Kyle776R"><img alt="GitHub" src="images/github-icon.svg" /></a> <a href="https://orcid.org/0009-0008-1022-5234"><img alt="ORCID" src="images/orcid-icon.svg" /></a> <a href="https://scholar.google.com/citations?user=nwUxKoYAAAAJ&amp;hl=en"><img alt="Google Scholar" src="images/google-scholar-icon.svg" /></a> <a href="https://www.linkedin.com/in/kyle-rossi-637313203/"><img alt="LinkedIn" src="images/linkedin-icon.svg" /></a></p>
+<h2 id="about-me">About Me</h2>
+<p>I am a doctoral student and research assistant at Kent State University. Currently, I am pursuing a Ph.D. while working on the srcML infrastructure. My primary interests are in software engineering and programming language parsing, although I am working on Pythonic idiom analysis.</p>
+<h2 id="srcml">srcML</h2>
+<p><strong>srcML</strong> (Source Markup Language) is an XML representation for source code that preserves all original content. It is lightweight, scalable, and supports various programming languages (e.g., C, C++, C#, Java, and Python). Notably, srcML has its own built-in query language (<code>srcQL</code>) and is the foundation for many tools (e.g., <code>stereocode</code>, <code>nameCollector</code>, etc.).</p>
+<p>Example file <code>example.py</code>:</p>
+<pre><code># Adds two numbers, x and y
+
+def sum(x, y):
+    return x + y
+</code></pre>
+<p>srcML output for <code>example.py</code>:</p>
+<pre><code>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Python" filename="example.py"&gt;
+&lt;comment type="line"&gt;# Adds two numbers, x and y&lt;/comment&gt;
+
+&lt;function&gt;def &lt;name&gt;sum&lt;/name&gt;&lt;parameter_list&gt;(&lt;parameter&gt;&lt;name&gt;x&lt;/name&gt;&lt;/parameter&gt;, &lt;parameter&gt;&lt;name&gt;y&lt;/name&gt;&lt;/parameter&gt;)&lt;/parameter_list&gt;&lt;block&gt;:&lt;block_content&gt;
+    &lt;return&gt;return &lt;expr&gt;&lt;name&gt;x&lt;/name&gt; &lt;operator&gt;+&lt;/operator&gt; &lt;name&gt;y&lt;/name&gt;&lt;/expr&gt;&lt;/return&gt;
+&lt;/block_content&gt;&lt;/block&gt;&lt;/function&gt;&lt;/unit&gt;
+</code></pre>
+<p>I have primarily contributed to srcML by modifying the existing infrastructure to support the addition of new programming languages (e.g., Python). I am also involved with writing programming language grammars (in XML format) and bug fixing. Using srcML, I have extended existing Pythonic idiom detection.</p>
+<h2 id="education">Education</h2>
+<p><strong>Ph.D. in Computer Science</strong></p>
+<ul>
+<li><em>Kent State University</em></li>
+<li>August 2025 - Present</li>
+</ul>
+<p><strong>M.S. in Computer Science</strong></p>
+<ul>
+<li><em>The University of Akron</em></li>
+<li>August 2023 - July 2025</li>
+<li>Thesis Title: "Extending srcML to Python to Analyze Pythonic Idioms"</li>
+</ul>
+<p><strong>B.S. in Computer Science</strong></p>
+<ul>
+<li><em>The College of Wooster</em></li>
+<li>August 2019 - May 2023</li>
+<li>Independent Study Title: "Visualizing Constraint Satisfaction Problems Using Swarm Intelligence"</li>
+</ul>
+<h2 id="publications">Publications</h2>
+<ul>
+<li>K. N. Rossi, "Extending srcML to Python to Analyze Pythonic Idioms," University of Akron, 2025. [Online]. Available: <a href="http://rave.ohiolink.edu/etdc/view?acc_num=akron1750947582590048">http://rave.ohiolink.edu/etdc/view?acc_num=akron1750947582590048</a></li>
+<li>K. N. Rossi, "Visualizing Constraint Satisfaction Problems Using Swarm Intelligence," The College of Wooster, 2023. [Online]. Available: <a href="https://openworks.wooster.edu/independentstudy/10550">https://openworks.wooster.edu/independentstudy/10550</a></li>
+</ul>
+<h2 id="professional-activities">Professional Activities</h2>
+<ul>
+<li>ICPC 2026 - Additional Reviewer</li>
+<li>ICSME 2025 - Additional Reviewer</li>
+<li>FSE 2025 - Additional Reviewer</li>
+<li>VISSOFT 2024 - Additional Reviewer</li>
+<li>FSE 2024 - Additional Reviewer</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.6.1
+Build Date UTC : 2026-01-14 18:57:33.873277+00:00
+-->

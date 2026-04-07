@@ -58,6 +58,7 @@ I have primarily contributed to srcML by modifying the existing infrastructure t
 
 ## Professional Activities
 
+* ICSME 2026 - Additional Reviewer
 * ICPC 2026 - Additional Reviewer
 * ICSME 2025 - Additional Reviewer
 * FSE 2025 - Additional Reviewer

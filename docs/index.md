@@ -1,13 +1,13 @@
 <img src="images/portrait.jpeg" alt="Portrait" align="right" width="164" height="218">
 # Kyle N. Rossi
-#####Research Assistant at Kent State University
+#####Graduate Research/Teaching Assistant at Kent State University
 #####(he/him)
 
 [![Email](images/email-icon.svg)](mailto:krossi9@kent.edu) [![GitHub](images/github-icon.svg)](https://github.com/Kyle776R) [![ORCID](images/orcid-icon.svg)](https://orcid.org/0009-0008-1022-5234) [![Google Scholar](images/google-scholar-icon.svg)](https://scholar.google.com/citations?user=nwUxKoYAAAAJ&hl=en) [![LinkedIn](images/linkedin-icon.svg)](https://www.linkedin.com/in/kyle-rossi-637313203/)
 
 ## About Me
 
-I am a doctoral student and research assistant at Kent State University. Currently, I am pursuing a Ph.D. while working on the srcML infrastructure. My primary interests are in software engineering and programming language parsing, although I am working on Pythonic idiom analysis.
+I am a doctoral student and research assistant at Kent State University. Currently, I am pursuing a Ph.D. while working on the srcML infrastructure. My primary interests are in program comprehension and static analysis as well as programming language parsing and tooling.
 
 ## srcML
 
@@ -30,7 +30,7 @@ srcML output for `example.py`:
         <return>return <expr><name>x</name> <operator>+</operator> <name>y</name></expr></return>
     </block_content></block></function></unit>
 
-I have primarily contributed to srcML by modifying the existing infrastructure to support the addition of new programming languages (e.g., Python). I am also involved with writing programming language grammars (in XML format) and bug fixing. Using srcML, I have extended existing Pythonic idiom detection.
+I have primarily contributed to the srcML Toolkit by modifying the existing infrastructure to support the addition of new programming languages (e.g., Python and JavaScript). I am also involved with writing programming language grammars (in XML format) and bug fixing. Using srcML, I have extended existing Pythonic idiom detection.
 
 ## Education
 
@@ -51,16 +51,22 @@ I have primarily contributed to srcML by modifying the existing infrastructure t
 * August 2019 - May 2023
 * Independent Study Title: "Visualizing Constraint Satisfaction Problems Using Swarm Intelligence"
 
+## Works Under Review or Near Submission
+
+* Al-lahabi, N.I., Behler, J.A.C., Al-Ramadan, A.F., Rossi, K.F., Decker, M.J., Collard, M.L., Maletic, J.I., “Slice Inspector: Visualizing Program Slices in Visual Studio Code”, submitted June 18th to SCAM 2026 Engineering Track.
+* Behler, J.A.C., Al-Ramadan, A.F., Rossi, K.N., Decker, M.J., Collard, M.L., Maletic, J.I., “Constructing High-Quality Python Bindings for C Libraries”, to be submitted Fall 2026 to the *Science of Computer Programming Journal*.
+
 ## Publications
 
-* K. N. Rossi, "Extending srcML to Python to Analyze Pythonic Idioms," University of Akron, 2025. \[Online\]. Available: [http://rave.ohiolink.edu/etdc/view?acc_num=akron1750947582590048](http://rave.ohiolink.edu/etdc/view?acc_num=akron1750947582590048)
-* K. N. Rossi, "Visualizing Constraint Satisfaction Problems Using Swarm Intelligence," The College of Wooster, 2023. \[Online\]. Available: [https://openworks.wooster.edu/independentstudy/10550](https://openworks.wooster.edu/independentstudy/10550)
+* K.N. Rossi, "Extending srcML to Python to Analyze Pythonic Idioms," University of Akron, 2025. \[Online\]. Available: [http://rave.ohiolink.edu/etdc/view?acc_num=akron1750947582590048](http://rave.ohiolink.edu/etdc/view?acc_num=akron1750947582590048)
+* K.N. Rossi, "Visualizing Constraint Satisfaction Problems Using Swarm Intelligence," The College of Wooster, 2023. \[Online\]. Available: [https://openworks.wooster.edu/independentstudy/10550](https://openworks.wooster.edu/independentstudy/10550)
 
 ## Professional Activities
 
-* ICSME 2026 - Additional Reviewer
-* ICPC 2026 - Additional Reviewer
-* ICSME 2025 - Additional Reviewer
-* FSE 2025 - Additional Reviewer
-* VISSOFT 2024 - Additional Reviewer
-* FSE 2024 - Additional Reviewer
+* 2026 IEEE Working Conference on Software Visualization (VISSOFT) - Additional Reviewer
+* 2026 IEEE International Conference on Software Maintenance and Evolution (ICSME) - Additional Reviewer
+* 2026 IEEE/ACM International Conference on Program Comprehension (ICPC) - Additional Reviewer
+* 2025 IEEE International Conference on Software Maintenance and Evolution (ICSME) - Additional Reviewer
+* 2025 ACM International Conference on the Foundations of Software Engineering (FSE) - Additional Reviewer
+* 2024 IEEE Working Conference on Software Visualization (VISSOFT) - Additional Reviewer
+* 2024 ACM International Conference on the Foundations of Software Engineering (FSE) - Additional Reviewer
